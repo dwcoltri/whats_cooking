@@ -16,7 +16,7 @@ def process(cmd_line_args):
     # Ensure we have this for lemmatization
     nltk.download("wordnet")
     # Read in testing and training file as pandas dataframes
-    training_data_frame = pandas.read_json("training_file.json")
+    training_data_frame = pandas.read_json("trainfile2.json")
     testing_data_frame = pandas.read_json(cmd_line_args.test_file)
 
     # Lemmatize
